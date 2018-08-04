@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "SIF: Shopping Interest Finder",
+  "description": "This extension trys to find the user shopping interest by monitering the user scan behavior.",
+  "version": "1.0",
+
+   "browser_action": {
+    "default_icon": "cat.png"
+  },
+
+
+
+  "options_page": "options.html",
+
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": true
+  },
+
+  "permissions": [
+    "tabs",
+    "unlimitedStorage",
+    "webNavigation",
+    "http://localhost:8080/",
+    "http://localhost:8080/*",
+    "http://tu069177.ip.tsinghua.edu.cn:8080/",
+    "http://tu069177.ip.tsinghua.edu.cn:8080/*"
+  ]
+}
